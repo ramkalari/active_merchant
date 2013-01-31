@@ -446,6 +446,7 @@ module ActiveMerchant #:nodoc:
       end
 
       def headers(meta={})
+        puts "Hello World. We are in header now."
         @@ua ||= JSON.dump({
            :bindings_version => ActiveMerchant::VERSION,
            :lang => 'ruby',
